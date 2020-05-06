@@ -1,18 +1,17 @@
 {
-  "name": "alfy-demo",
+  "name": "alfred-imagemin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Minify images seamlessly with imagemin",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+		"postinstall": "alfy-init",
+		"preuninstall": "alfy-cleanup"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "alfy": "^0.9.1",
-    "child-process-promise": "^2.2.1"
-  },
-  "devDependencies": {
+    "child-process-promise": "^2.2.1",
     "imagemin": "^7.0.1",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-mozjpeg": "^8.0.0",
