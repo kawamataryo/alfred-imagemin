@@ -1,14 +1,24 @@
 {
   "name": "alfred-imagemin",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Minify images seamlessly with imagemin",
   "main": "index.js",
   "scripts": {
 		"postinstall": "alfy-init",
 		"preuninstall": "alfy-cleanup"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ryo Kawamata <ba068082@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "alfred",
+    "image",
+    "minify",
+    "optimizer",
+    "gif",
+    "jpeg",
+    "png",
+    "svg"
+  ],
   "dependencies": {
     "alfy": "^0.9.1",
     "child-process-promise": "^2.2.1",
