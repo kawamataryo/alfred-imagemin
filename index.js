@@ -1,32 +1,37 @@
 const alfy = require("alfy");
 const exec = require("child-process-promise").exec;
 const imagemin = require("imagemin");
-const imageminMozjpeg = require('imagemin-mozjpeg');
-const imageminPngquant = require('imagemin-pngquant');
-const imageminGifsicle = require('imagemin-gifsicle');
-const imageminSvgo = require('imagemin-svgo');
+const imageminMozjpeg = require("imagemin-mozjpeg");
+const imageminPngquant = require("imagemin-pngquant");
+const imageminGifsicle = require("imagemin-gifsicle");
+const alfredNotifier = require("alfred-notifier");
 
-// TODO: selectedがない場合のエラー表示
-const { stdout: selected, stderr } = await exec("automator get_selection.workflow");
+alfredNotifier();
 
-if (stderr) {
-  alfy.output(`stderr: ${stderr}`);
-  return;
+// TODO: 環境変数のvalidate
+const jpegQuality = process.env.JPEG_QUALITY || 80;
+const pngMaxQuality = process.env.PNG_MAX_QUALITY || 0.8;
+const pngMinQuality = process.env.PNG_MIN_QUALITY || 0.65;
+const gifOptimizationLevel = process.env.GIF_OPTIMIZATION_LEVEL || 3;
+
+const result = await exec("automator get_selection.workflow");
+
+alfy.output(result.stdout)
+if (!result | result.stderr) {
+  console.log(`ERROR: Nothing selected.`);
 }
 
-const files = selected.match(/".+?\"/g).map((f) => f.slice(1, -1));
+const files = result.stdout.match(/".+?\"/g).map((f) => f.slice(1, -1));
 
-//TODO: 空白文字を含む場合のファイル名指定した場合の対応
-const { stdout: outDir } = await exec(`dirname ${files[0]}`)
+const { stdout: outDir } = await exec(`dirname "${files[0]}"`);
 
 await imagemin(files, {
   destination: `${outDir.trim()}/shrink`,
   plugins: [
-    imageminMozjpeg({ quality: 80 }),
-    imageminPngquant({ quality: '65-80' }),
-    imageminGifsicle({ optimizationLevel: 3 }),
-    imageminSvgo()
-	],
+    imageminMozjpeg({ quality: jpegQuality }),
+    imageminPngquant({ quality: [pngMinQuality, pngMaxQuality] }),
+    imageminGifsicle({ optimizationLevel: gifOptimizationLevel }),
+  ],
 });
 
-// TODO: 完了のアウトプット
+console.log("Minify completed");

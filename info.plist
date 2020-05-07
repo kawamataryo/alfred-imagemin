@@ -51,13 +51,13 @@
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
-				<false/>
+				<true/>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string></string>
+				<string>{query}</string>
 				<key>title</key>
-				<string>Succeeded in compression</string>
+				<string>imagemin</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
@@ -125,7 +125,7 @@
 		<key>A41A4B98-F508-4808-B2C0-DDD3C7497B8F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>625</integer>
+			<integer>670</integer>
 			<key>ypos</key>
 			<integer>330</integer>
 		</dict>

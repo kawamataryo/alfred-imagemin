@@ -24,6 +24,7 @@
     "svg"
   ],
   "dependencies": {
+    "alfred-notifier": "^0.2.3",
     "alfy": "^0.9.1",
     "child-process-promise": "^2.2.1",
     "imagemin": "^7.0.1",
