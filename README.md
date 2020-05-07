@@ -13,7 +13,7 @@ $ npm install --global alfred-imagemin
 
 Selected image files on finder, type `imagemin` and `enter` in Alfred.
 
-##  Workflow Configuration
+## Configuration
 Alfred environment variables.
 
 |name|default|value|
