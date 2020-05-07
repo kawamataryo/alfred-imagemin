@@ -55,9 +55,9 @@
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>{query}</string>
+				<string></string>
 				<key>title</key>
-				<string>alfy-demo</string>
+				<string>Succeeded in compression</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
