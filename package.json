@@ -1,11 +1,11 @@
 {
   "name": "alfred-imagemin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Minify images seamlessly with imagemin",
   "main": "index.js",
   "scripts": {
-		"postinstall": "alfy-init",
-		"preuninstall": "alfy-cleanup"
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
   },
   "author": "Ryo Kawamata <ba068082@gmail.com>",
   "license": "MIT",
