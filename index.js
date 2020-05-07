@@ -24,8 +24,8 @@ await imagemin(files, {
   plugins: [
     imageminMozjpeg({ quality: 80 }),
     imageminPngquant({ quality: '65-80' }),
-    imageminGifsicle(),
-    imageminSvgo({ optimizationLevel: 3 })
+    imageminGifsicle({ optimizationLevel: 3 }),
+    imageminSvgo()
 	],
 });
 
