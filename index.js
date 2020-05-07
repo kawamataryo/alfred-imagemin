@@ -16,9 +16,9 @@ const gifOptimizationLevel = process.env.GIF_OPTIMIZATION_LEVEL || 3;
 
 const result = await exec("automator get_selection.workflow");
 
-alfy.output(result.stdout)
 if (!result | result.stderr) {
-  console.log(`ERROR: Nothing selected.`);
+	console.log(`ERROR: Nothing selected.`);
+	return;
 }
 
 const files = result.stdout.match(/".+?\"/g).map((f) => f.slice(1, -1));

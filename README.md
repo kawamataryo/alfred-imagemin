@@ -1,7 +1,7 @@
 # alfred-imagemin
 Minify images seamlessly with imagemin.
 
-# Install
+## Install
 
 Ensure you have Node.js version 10 or higher installed. Then run the following:
 
@@ -9,11 +9,13 @@ Ensure you have Node.js version 10 or higher installed. Then run the following:
 $ npm install --global alfred-imagemin
 ```
 
-# Usage
+## Usage
 
 Selected image files on finder, type `imagemin` and `enter` in Alfred.
 
-# Workflow Configuration (Environment Variables)
+##  Workflow Configuration
+Alfred environment variables.
+
 |name|default|value|
 |---|---|---|
 |JPEG_QUALITY | 80 | Option to [imagemin-mozjpeg](https://github.com/imagemin/imagemin-mozjpeg#quality). Compression quality, in range 0 (worst) to 100 (perfect). |
