@@ -48,27 +48,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>imagemin</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>A41A4B98-F508-4808-B2C0-DDD3C7497B8F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -110,6 +89,27 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>imagemin</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>A41A4B98-F508-4808-B2C0-DDD3C7497B8F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>optimized animation gif</string>
@@ -125,9 +125,9 @@
 		<key>A41A4B98-F508-4808-B2C0-DDD3C7497B8F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>670</integer>
+			<integer>625</integer>
 			<key>ypos</key>
-			<integer>330</integer>
+			<integer>335</integer>
 		</dict>
 		<key>F39DB04E-97B4-4DC2-B07A-ACD6B95B7CC1</key>
 		<dict>
@@ -138,6 +138,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/kawamataryo/alfred-imagemin</string>
 </dict>
 </plist>
