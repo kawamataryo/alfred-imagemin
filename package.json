@@ -9,6 +9,10 @@
   },
   "author": "Ryo Kawamata <ba068082@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kawamataryo/alfred-imagemin"
+  },
   "keywords": [
     "alfred",
     "image",
