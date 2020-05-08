@@ -2,7 +2,8 @@
 Minify images seamlessly with imagemin.
 
 
-![May-07-2020 20-29-53 (1)](https://user-images.githubusercontent.com/11070996/81289787-f43d1680-90a1-11ea-801d-9b34fee617a9.gif)
+![minify-demo](https://user-images.githubusercontent.com/11070996/81453099-a3bdda00-91c3-11ea-89ba-1dd00ae6d95e.gif)
+
 
 
 ## Install
