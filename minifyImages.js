@@ -6,22 +6,20 @@ const imageminPngquant = require("imagemin-pngquant");
 const imageminGifsicle = require("imagemin-gifsicle");
 const alfredNotifier = require("alfred-notifier");
 
-alfredNotifier();
-
-// TODO: 環境変数のvalidate
+// TODO: validate env variables
 const jpegQuality = process.env.JPEG_QUALITY || 80;
 const pngMaxQuality = process.env.PNG_MAX_QUALITY || 0.8;
 const pngMinQuality = process.env.PNG_MIN_QUALITY || 0.65;
 const gifOptimizationLevel = process.env.GIF_OPTIMIZATION_LEVEL || 3;
 
-const result = await exec("automator get_selection.workflow");
+const argv = process.argv[2];
 
-if (!result | result.stderr) {
-	console.log(`ERROR: Nothing selected.`);
-	return;
+if (!argv) {
+  console.log(`ERROR: unknown error.`);
+  return;
 }
 
-const files = result.stdout.match(/".+?\"/g).map((f) => f.slice(1, -1));
+const files = argv.split("///");
 
 const { stdout: outDir } = await exec(`dirname "${files[0]}"`);
 
@@ -34,4 +32,4 @@ await imagemin(files, {
   ],
 });
 
-console.log("Minify completed");
+console.log("Minify completed.");

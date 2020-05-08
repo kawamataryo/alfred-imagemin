@@ -2,7 +2,7 @@
   "name": "alfred-imagemin",
   "version": "0.1.6",
   "description": "Minify images seamlessly with imagemin",
-  "main": "index.js",
+  "main": "minifyImages.js",
   "scripts": {
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
@@ -27,6 +27,7 @@
     "alfred-notifier": "^0.2.3",
     "alfy": "^0.9.1",
     "child-process-promise": "^2.2.1",
+    "file-type": "^14.3.0",
     "imagemin": "^7.0.1",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-mozjpeg": "^8.0.0",

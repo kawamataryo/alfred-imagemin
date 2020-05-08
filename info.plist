@@ -8,11 +8,59 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>36B674BC-CFF4-413B-9C0C-22BB5F752319</key>
+		<key>823C00FE-ACCF-4081-B9D9-3FA91257E801</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A41A4B98-F508-4808-B2C0-DDD3C7497B8F</string>
+				<string>657BD919-DB88-4E6C-9152-C65E278D70FB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>E5DC8D51-0FBA-40E6-8E71-7390D1D42C0C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D26018EE-ED09-4F7C-8010-E150093C4D65</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E2A9D60-A32C-409E-BB8F-6CF9EE7D4CAA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A39D1FF5-9E87-4107-BDA5-4F8D3EE6B9D9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>823C00FE-ACCF-4081-B9D9-3FA91257E801</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D26018EE-ED09-4F7C-8010-E150093C4D65</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A6A794DC-94B7-4ED2-BD1A-DFB9719617AA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -25,7 +73,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>36B674BC-CFF4-413B-9C0C-22BB5F752319</string>
+				<string>A39D1FF5-9E87-4107-BDA5-4F8D3EE6B9D9</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -42,9 +90,30 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>imagemin</string>
+	<string>Imagemin</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Imagemin</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>657BD919-DB88-4E6C-9152-C65E278D70FB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -53,7 +122,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js</string>
+				<string>./node_modules/.bin/run-node verifySelectedFiles.js</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -64,7 +133,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>36B674BC-CFF4-413B-9C0C-22BB5F752319</string>
+			<string>A39D1FF5-9E87-4107-BDA5-4F8D3EE6B9D9</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -76,9 +145,9 @@
 				<key>keyword</key>
 				<string>imagemin</string>
 				<key>subtext</key>
-				<string></string>
-				<key>text</key>
 				<string>Minify images with imagemin</string>
+				<key>text</key>
+				<string>Imagemin</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -95,18 +164,92 @@
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
-				<true/>
+				<false/>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
 				<string>{query}</string>
 				<key>title</key>
-				<string>imagemin</string>
+				<string>Imagemin</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>A41A4B98-F508-4808-B2C0-DDD3C7497B8F</string>
+			<string>A6A794DC-94B7-4ED2-BD1A-DFB9719617AA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node minifyImages.js {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D26018EE-ED09-4F7C-8010-E150093C4D65</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>.*ERROR.*</string>
+						<key>outputlabel</key>
+						<string>{query}</string>
+						<key>uid</key>
+						<string>E5DC8D51-0FBA-40E6-8E71-7390D1D42C0C</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>823C00FE-ACCF-4081-B9D9-3FA91257E801</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Minify started.</string>
+				<key>title</key>
+				<string>Imagemin</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>6E2A9D60-A32C-409E-BB8F-6CF9EE7D4CAA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -115,19 +258,47 @@
 	<string>optimized animation gif</string>
 	<key>uidata</key>
 	<dict>
-		<key>36B674BC-CFF4-413B-9C0C-22BB5F752319</key>
+		<key>657BD919-DB88-4E6C-9152-C65E278D70FB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>425</integer>
+			<integer>750</integer>
+			<key>ypos</key>
+			<integer>185</integer>
+		</dict>
+		<key>6E2A9D60-A32C-409E-BB8F-6CF9EE7D4CAA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>755</integer>
+			<key>ypos</key>
+			<integer>475</integer>
+		</dict>
+		<key>823C00FE-ACCF-4081-B9D9-3FA91257E801</key>
+		<dict>
+			<key>xpos</key>
+			<integer>595</integer>
+			<key>ypos</key>
+			<integer>340</integer>
+		</dict>
+		<key>A39D1FF5-9E87-4107-BDA5-4F8D3EE6B9D9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>435</integer>
+			<key>ypos</key>
+			<integer>325</integer>
+		</dict>
+		<key>A6A794DC-94B7-4ED2-BD1A-DFB9719617AA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>945</integer>
 			<key>ypos</key>
 			<integer>330</integer>
 		</dict>
-		<key>A41A4B98-F508-4808-B2C0-DDD3C7497B8F</key>
+		<key>D26018EE-ED09-4F7C-8010-E150093C4D65</key>
 		<dict>
 			<key>xpos</key>
-			<integer>625</integer>
+			<integer>750</integer>
 			<key>ypos</key>
-			<integer>335</integer>
+			<integer>330</integer>
 		</dict>
 		<key>F39DB04E-97B4-4DC2-B07A-ACD6B95B7CC1</key>
 		<dict>
