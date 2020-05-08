@@ -2,6 +2,9 @@ const alfy = require("alfy");
 const exec = require("child-process-promise").exec;
 const FileType = require("file-type");
 const fs = require("fs");
+const alfredNotifier = require('alfred-notifier');
+
+alfredNotifier();
 
 const TARGET_FILE_TYPES = ["jpg", "png", "gif"];
 
@@ -32,7 +35,7 @@ const fileTypes = await Promise.all(
 );
 
 const isTargetFileType = fileTypes.every((f) =>
-  TARGET_FILE_TYPES.includes(f.ext)
+  TARGET_FILE_TYPES.includes(f && f.ext)
 );
 
 if (isTargetFileType) {
