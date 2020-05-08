@@ -1,6 +1,6 @@
 {
   "name": "alfred-imagemin",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "description": "Minify images seamlessly with imagemin",
   "main": "minifyImages.js",
   "scripts": {
