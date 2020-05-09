@@ -1,21 +1,14 @@
-const alfy = require("alfy");
-const exec = require("child-process-promise").exec;
+const path = require("path");
 const imagemin = require("imagemin");
 const imageminMozjpeg = require("imagemin-mozjpeg");
 const imageminPngquant = require("imagemin-pngquant");
 const imageminGifsicle = require("imagemin-gifsicle");
-const alfredNotifier = require("alfred-notifier");
 
 const argv = process.argv[2];
 
-if (!argv) {
-  console.log(`ERROR: Unknown error.`);
-  return;
-}
-
 const files = argv.split("///");
 
-const { stdout: outDir } = await exec(`dirname "${files[0]}"`);
+const outDir = path.dirname(files[0]);
 
 const jpegQuality = process.env.JPEG_QUALITY
   ? Number(process.env.JPEG_QUALITY)

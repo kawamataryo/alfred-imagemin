@@ -1,5 +1,5 @@
-const alfy = require("alfy");
-const exec = require("child-process-promise").exec;
+const { exec } = require("child_process");
+const util = require("util");
 const FileType = require("file-type");
 const fs = require("fs");
 const alfredNotifier = require("alfred-notifier");
@@ -21,7 +21,7 @@ const gifOptimizationLevel = process.env.GIF_OPTIMIZATION_LEVEL
   ? Number(process.env.GIF_OPTIMIZATION_LEVEL)
   : 3;
 
-// validate env variables
+// verify env variables
 const isValidEnvVariables = (
   jpegQuality,
   pngMaxQuality,
@@ -55,7 +55,7 @@ if (
 }
 
 // get selected files
-const result = await exec("automator get_selection.workflow");
+const result = await util.promisify(exec)("automator get_selection.workflow");
 
 if (!result | result.stderr) {
   console.log(`ERROR: Nothing selected.`);
