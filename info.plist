@@ -319,6 +319,8 @@
 		<key>PNG_MIN_QUALITY</key>
 		<string>0.65</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>1.1.0</string>
 	<key>webaddress</key>

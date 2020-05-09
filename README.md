@@ -16,7 +16,7 @@ $ npm install --global alfred-imagemin
 ```
 
 #### Manually
-[download the workflow directly](https://github.com/kawamataryo/alfred-imagemin/releases/tag/v1.1.0).
+[download the workflow directly](https://github.com/kawamataryo/alfred-imagemin/releases).
 
 ## Usage
 
