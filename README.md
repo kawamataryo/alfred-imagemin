@@ -1,6 +1,6 @@
 # alfred-imagemin
-Minify selected images seamlessly with imagemin.
-The target files of minify are `jpeg`, `png` and `gif`.
+Minify images with Imagemin.  
+3 file formats supported. `PNG`, `JPEG`, `GIF`
 
 ![minify-demo](https://user-images.githubusercontent.com/11070996/81453099-a3bdda00-91c3-11ea-89ba-1dd00ae6d95e.gif)
 
