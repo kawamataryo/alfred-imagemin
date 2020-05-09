@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>alfred-imagemin</string>
+	<string>com.ryokawamata.imagemin</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -308,6 +308,8 @@
 			<integer>330</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>1.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/kawamataryo/alfred-imagemin</string>
 </dict>

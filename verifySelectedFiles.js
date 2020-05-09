@@ -23,7 +23,7 @@ const files = result.stdout.match(/".+?\"/g).map((f) => f.slice(1, -1));
 const isContainDir = files.some((f) => fs.statSync(f).isDirectory());
 
 if (isContainDir) {
-  console.log("ERROR: select directory.");
+  console.log("ERROR: Select directory.");
   return;
 }
 
