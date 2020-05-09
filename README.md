@@ -1,29 +1,49 @@
 # alfred-imagemin
-Minify images seamlessly with imagemin.
-
+Minify selected images seamlessly with imagemin.
+The target files of minify are `jpeg`, `png` and `gif`.
 
 ![minify-demo](https://user-images.githubusercontent.com/11070996/81453099-a3bdda00-91c3-11ea-89ba-1dd00ae6d95e.gif)
 
 
-
 ## Install
+Requires the Alfred 3 or 4 [Powerpack](https://www.alfredapp.com/powerpack/), [Node.js](https://nodejs.org) 8+.
 
-Ensure you have Node.js version 10 or higher installed. Then run the following:
+#### With NPM
+Install with npm
 
 ```
 $ npm install --global alfred-imagemin
 ```
 
+#### Manually
+[download the workflow directly](https://github.com/kawamataryo/alfred-imagemin/releases/tag/v1.1.0).
+
 ## Usage
 
-Selected image files on finder, type `imagemin` and `enter` in Alfred.
+1. Select images on finder
+2. Open alfred and type `imagemin` and `enter` in Alfred.
+3. Output minify images in `shrink` folder
+
+
 
 ## Configuration
 Alfred environment variables.
 
 |name|default|value|
 |---|---|---|
-|JPEG_QUALITY | 80 | Option to [imagemin-mozjpeg](https://github.com/imagemin/imagemin-mozjpeg#quality). Compression quality, in range 0 (worst) to 100 (perfect). |
-|PNG_MIN_QUALITY | 0.8 | Option to [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant#quality). Compression max quality, in range 0 to 1|
-|PNG_MAX_QUALITY | 0.65 | Option to [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant#quality). Compression min quality, in range 0 to 1|
+|JPEG_QUALITY | 80 | Option to [imagemin-mozjpeg](https://github.com/imagemin/imagemin-mozjpeg#quality). Compression quality, in range 0 (worst) to 100 (perfect) |
+|PNG_MAX_QUALITY | 0.8 | Option to [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant#quality). Compression max quality, in range 0 to 1|
+|PNG_MIN_QUALITY | 0.65 | Option to [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant#quality). Compression min quality, in range 0 to 1|
 |GIF_OPTIMIZATION_LEVEL | 3 | Option to [imagemin-gifsicle](https://github.com/imagemin/imagemin-gifsicle#optimizationlevel). Select an optimization level between 1 and 3.|
+
+## Related
+
+- [alfy](https://github.com/sindresorhus/alfy) - Create Alfred workflows with ease
+- [imagemin](https://github.com/imagemin/imagemin#readme) - Minify images seamlessly
+- [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant) -  Imagemin plugin for `pngquant`
+- [imagemin-mozjpeg](https://github.com/imagemin/imagemin-mozjpeg) - Imagemin plugin for `mozjpeg`
+- [imagemin-gifsicle](https://github.com/imagemin/imagemin-gifsicle#optimizationlevel) - - Imagemin plugin for `gifsicle`
+
+## License
+
+MIT ©

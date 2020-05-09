@@ -86,7 +86,7 @@
 	<key>createdby</key>
 	<string>ryoKawamata</string>
 	<key>description</key>
-	<string>Minify images seamlessly with imagemin</string>
+	<string>Minify selected images seamlessly with imagemin</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -145,7 +145,7 @@
 				<key>keyword</key>
 				<string>imagemin</string>
 				<key>subtext</key>
-				<string>Minify images with imagemin</string>
+				<string>Minify selected images with imagemin</string>
 				<key>text</key>
 				<string>Imagemin</string>
 				<key>withspace</key>
@@ -255,7 +255,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>optimized animation gif</string>
+	<string>Minify selected images seamlessly with imagemin.</string>
 	<key>uidata</key>
 	<dict>
 		<key>657BD919-DB88-4E6C-9152-C65E278D70FB</key>
@@ -268,9 +268,9 @@
 		<key>6E2A9D60-A32C-409E-BB8F-6CF9EE7D4CAA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>755</integer>
+			<integer>760</integer>
 			<key>ypos</key>
-			<integer>475</integer>
+			<integer>480</integer>
 		</dict>
 		<key>823C00FE-ACCF-4081-B9D9-3FA91257E801</key>
 		<dict>
@@ -308,8 +308,19 @@
 			<integer>330</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>GIF_OPTIMIZATION_LEVEL</key>
+		<string>3</string>
+		<key>JPEG_QUALITY</key>
+		<string>80</string>
+		<key>PNG_MAX_QUALITY</key>
+		<string>0.8</string>
+		<key>PNG_MIN_QUALITY</key>
+		<string>0.65</string>
+	</dict>
 	<key>version</key>
-	<string>1.0.1</string>
+	<string>1.1.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/kawamataryo/alfred-imagemin</string>
 </dict>
