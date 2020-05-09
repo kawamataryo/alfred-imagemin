@@ -122,7 +122,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/verifySelectedFiles.js</string>
+				<string>./node_modules/.bin/run-node src/verify.js</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
