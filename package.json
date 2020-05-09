@@ -20,8 +20,7 @@
     "optimizer",
     "gif",
     "jpeg",
-    "png",
-    "svg"
+    "png"
   ],
   "dependencies": {
     "alfred-notifier": "^0.2.3",
