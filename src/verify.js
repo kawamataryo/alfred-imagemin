@@ -10,13 +10,13 @@ const TARGET_FILE_TYPES = ["jpg", "png", "gif"];
 
 const jpegQuality = process.env.JPEG_QUALITY
   ? Number(process.env.JPEG_QUALITY)
-  : 80;
+  : 70;
 const pngMaxQuality = process.env.PNG_MAX_QUALITY
   ? Number(process.env.PNG_MAX_QUALITY)
-  : 0.8;
+  : 0.6;
 const pngMinQuality = process.env.PNG_MIN_QUALITY
   ? Number(process.env.PNG_MIN_QUALITY)
-  : 0.65;
+  : 0.5;
 const gifOptimizationLevel = process.env.GIF_OPTIMIZATION_LEVEL
   ? Number(process.env.GIF_OPTIMIZATION_LEVEL)
   : 3;

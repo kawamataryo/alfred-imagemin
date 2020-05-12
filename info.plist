@@ -86,7 +86,7 @@
 	<key>createdby</key>
 	<string>ryoKawamata</string>
 	<key>description</key>
-	<string>Minify selected images seamlessly with imagemin</string>
+	<string>Minify images with imagemin</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -313,16 +313,14 @@
 		<key>GIF_OPTIMIZATION_LEVEL</key>
 		<string>3</string>
 		<key>JPEG_QUALITY</key>
-		<string>80</string>
+		<string>70</string>
 		<key>PNG_MAX_QUALITY</key>
-		<string>0.8</string>
+		<string>0.6</string>
 		<key>PNG_MIN_QUALITY</key>
-		<string>0.65</string>
+		<string>0.5</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>1.1.0</string>
+	<string>1.1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/kawamataryo/alfred-imagemin</string>
 </dict>
