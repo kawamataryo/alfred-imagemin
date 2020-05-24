@@ -242,7 +242,7 @@
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>Minify started.</string>
+				<string>Optimization is started</string>
 				<key>title</key>
 				<string>Imagemin</string>
 			</dict>
@@ -319,8 +319,10 @@
 		<key>PNG_MIN_QUALITY</key>
 		<string>0.5</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>1.1.2</string>
+	<string>1.1.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/kawamataryo/alfred-imagemin</string>
 </dict>

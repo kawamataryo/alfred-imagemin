@@ -25,7 +25,7 @@ const gifOptimizationLevel = process.env.GIF_OPTIMIZATION_LEVEL
 
 // minify images
 await imagemin(files, {
-  destination: `${outDir.trim()}/shrink`,
+  destination: `${outDir.trim()}/optimized_images`,
   plugins: [
     imageminMozjpeg({ quality: jpegQuality }),
     imageminPngquant({ quality: [pngMinQuality, pngMaxQuality] }),
@@ -34,4 +34,4 @@ await imagemin(files, {
 });
 
 console.log("Processing completed successfully.");
-console.log(`Minified ${files.length} files.`);
+console.log(`Optimized ${files.length} files.`);

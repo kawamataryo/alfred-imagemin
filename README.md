@@ -2,7 +2,7 @@
 Minify images with Imagemin.
 3 file formats supported. `PNG`, `JPEG`, `GIF`
 
-![minify-demo](https://user-images.githubusercontent.com/11070996/81453099-a3bdda00-91c3-11ea-89ba-1dd00ae6d95e.gif)
+![minify-demo](https://user-images.githubusercontent.com/11070996/82765622-660fb100-9e53-11ea-876f-c353f69312e4.gif)
 
 
 ## Install
@@ -20,14 +20,12 @@ $ npm install --global alfred-imagemin
 
 ## Usage
 
-1. Select images on finder
+1. Select images on finder.
 2. Open alfred and type `imagemin` and `enter` in Alfred.
-3. Output minify images in `shrink` folder
-
-
+3. Output minify images in `optimized_images` folder.
 
 ## Configuration
-Alfred environment variables.
+You can set the compression rate with an environment variable.
 
 |name|default|value|
 |---|---|---|
