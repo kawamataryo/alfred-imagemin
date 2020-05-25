@@ -22,10 +22,13 @@ const pngMinQuality = process.env.PNG_MIN_QUALITY
 const gifOptimizationLevel = process.env.GIF_OPTIMIZATION_LEVEL
   ? Number(process.env.GIF_OPTIMIZATION_LEVEL)
   : 3;
+const outputDir = process.env.OUTPUT_DIR
+  ? process.env.OUTPUT_DIR
+  : "optimized_images";
 
 // minify images
 await imagemin(files, {
-  destination: `${outDir.trim()}/optimized_images`,
+  destination: `${outDir.trim()}/${outputDir}`,
   plugins: [
     imageminMozjpeg({ quality: jpegQuality }),
     imageminPngquant({ quality: [pngMinQuality, pngMaxQuality] }),

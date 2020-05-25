@@ -25,10 +25,11 @@ $ npm install --global alfred-imagemin
 3. Output minify images in `optimized_images` folder.
 
 ## Configuration
-You can set the compression rate with an environment variable.
+You can set the compression rate and output dir with an environment variable.
 
 |name|default|value|
 |---|---|---|
+|OUT_DIR | optimized_images | Optimized image output directory name |
 |JPEG_QUALITY | 70 | Option to [imagemin-mozjpeg](https://github.com/imagemin/imagemin-mozjpeg#quality). Compression quality, in range 0 (worst) to 100 (perfect) |
 |PNG_MAX_QUALITY | 0.6 | Option to [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant#quality). Compression max quality, in range 0 to 1|
 |PNG_MIN_QUALITY | 0.5 | Option to [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant#quality). Compression min quality, in range 0 to 1|
