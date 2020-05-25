@@ -21,7 +21,7 @@ $ npm install --global alfred-imagemin
 ## Usage
 
 1. Select images on finder.
-2. Open alfred and type `imagemin` and `enter` in Alfred.
+2. Open alfred and type `imagemin` and press the Enter key.
 3. Output minify images in `optimized_images` folder.
 
 ## Configuration
