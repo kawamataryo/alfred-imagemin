@@ -69,6 +69,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E05C8CB0-B8FD-4EAE-9D24-96B44899CA31</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A39D1FF5-9E87-4107-BDA5-4F8D3EE6B9D9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F39DB04E-97B4-4DC2-B07A-ACD6B95B7CC1</key>
 		<array>
 			<dict>
@@ -84,9 +97,9 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>ryoKawamata</string>
+	<string>Ryo Kawamata</string>
 	<key>description</key>
-	<string>Minify images with imagemin</string>
+	<string>Minify images seamlessly with imagemin</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -253,6 +266,28 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<true/>
+				<key>filetypes</key>
+				<array>
+					<string>com.compuserve.gif</string>
+					<string>public.jpeg</string>
+					<string>public.jpeg-2000</string>
+					<string>public.png</string>
+				</array>
+				<key>name</key>
+				<string>imagemin</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>E05C8CB0-B8FD-4EAE-9D24-96B44899CA31</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Minify selected images seamlessly with imagemin.</string>
@@ -300,6 +335,13 @@
 			<key>ypos</key>
 			<integer>330</integer>
 		</dict>
+		<key>E05C8CB0-B8FD-4EAE-9D24-96B44899CA31</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>525</integer>
+		</dict>
 		<key>F39DB04E-97B4-4DC2-B07A-ACD6B95B7CC1</key>
 		<dict>
 			<key>xpos</key>
@@ -321,11 +363,9 @@
 		<key>PNG_MIN_QUALITY</key>
 		<string>0.5</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>1.3.1</string>
 	<key>webaddress</key>
-	<string>https://github.com/kawamataryo/alfred-imagemin</string>
+	<string>https://github.com/kawamataryo/alfred-imagemin#readme</string>
 </dict>
 </plist>
