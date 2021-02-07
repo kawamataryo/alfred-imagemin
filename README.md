@@ -9,11 +9,13 @@ Minify images with Imagemin.
 Requires the Alfred 3 or 4 [Powerpack](https://www.alfredapp.com/powerpack/), [Node.js](https://nodejs.org) 8+.
 
 #### With NPM
-Install with npm
+~~Install with npm.~~
 
-```
-$ npm install --global alfred-imagemin
-```
+~~$ npm install --global alfred-imagemin~~
+
+**2020/12/07**  
+Installation on npm will fail because of this [issue](https://github.com/SamVerschueren/alfred-link/issues/22).  
+Please install manually from [here](https://github.com/kawamataryo/alfred-gyazo-uploader/releases)
 
 #### Manually
 [download the workflow directly](https://github.com/kawamataryo/alfred-imagemin/releases).
